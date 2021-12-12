@@ -214,14 +214,12 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 105px auto auto 140px;
 
 }
 
 .suhyun_photo img{
-    width: 400px;
-    height: 230px;
-    border-radius:90%;
-    outline: 3px;
+    border-radius:70%;
     border: 3px solid #F6AE2D;
 }
 
@@ -232,6 +230,8 @@ body{
 .content_detail{
     font-size: 40px;
 }
+
+
 
 
 @media all and (max-width:375px){
