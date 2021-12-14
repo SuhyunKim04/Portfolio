@@ -335,7 +335,6 @@ body{
 .portfolio_items {
     display:flex;
     justify-content: space-evenly;
-    align-items: center;
     padding: 150px 100px 220px; 
 }
 
@@ -346,6 +345,11 @@ body{
     font-weight: 600;
     font-style: italic;
     text-align: center;
+    margin-bottom: 20px;
+}
+
+.illustrator_items h2{
+    margin-right: 20px;
 }
 
 .portfolio_items a{
@@ -367,9 +371,12 @@ body{
 
 .illustrator_items ul{
     display: flex;
-    align-items: center;
-    justify-content: center;
+    justify-content:flex-start;
     text-align: center;
+}
+
+.illustrator_items img:last-child{
+    height: 190px;
 }
 
 .illustrator_items img{
@@ -382,7 +389,8 @@ body{
 }
 
 .photography_items img{
-    width: 150px;
+    width: 300px;
+    margin-left:20px;
 }
 
 #costco h1{
@@ -521,10 +529,41 @@ body{
     top: 20px;right:30px;
     width: 70px;
 }
-.container { 
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 1rem;
+
+.row{
+    margin:0;padding:0;
+}
+
+.row.first{
+    text-align: center;
+}
+
+.row .col-4 img{
+    height: 80%;
+}
+
+.row .col-8 img{
+    height:80%; 
+    width: 100%;
+}
+
+.row .col-3 img{
+    height: 80%;
+    width: 100%;
+}
+
+.row .col-9 img{
+    height: 80%;
+    width: 100%;
+}
+
+.row .col-7 img{
+    height: 80%;
+    width: 100%;
+}
+
+.row .col-5 img{
+    height:80%;
 }
 
 #various h1{
@@ -536,6 +575,11 @@ body{
 .various_items{
     display: flex;
     margin: 0 200px 100px;
+}
+
+.various_items ul:last-child li{
+    margin-top: 300px;
+    margin-left:5px;
 }
 
 
@@ -659,30 +703,320 @@ body{
         margin-left: 4.5vw;
     }
     
-    .contact_detail{
-        display: flex;
-        align-items: center;
-    }
-    
-    .social ul{
-        display: flex;
-        align-items: center;
-    }
-    
     .social li:first-child,
     .social li:nth-child(2),
     .social li:nth-child(3){
         margin-right: 9.1vw;
         margin-top: 2.2vw;
-        width: 30px;
+        width: 3.4vw;
     }
     
     .social li:last-child{
         margin-top: 2.2vw;
-        width: 70px;
+        width: 7.9vw;
     }
-    
+
+
+    #portfolio h1{
+    width: 10.6vw;
+}
+
+.portfolio_items {
+    display:block;
+    padding: 3.4vw 0 2vw 0;
     
 }
 
+.portfolio_items h2{
+    font-size: 2.2vw;
+    text-align: left;
+    margin-left: 3.4vw
+}
 
+.portfolio_items a{
+    font-size: 2.2vw;
+}
+
+.ux_detail{
+    margin: 0 0 0 5.7vw;
+}
+
+.illustrator_items ul{
+    justify-content: stretch;
+}
+
+.photography_items ul{
+    display: flex;
+    margin: 0 0 0 5.7vw;
+}
+
+.bottom{
+    display: flex;
+    justify-content: space-between;
+    background-color: #73A580;
+    position: relative;
+    left:0;right:0;bottom:0;
+    height: 80px;
+}
+
+.social ul{
+    align-items: stretch;
+}
+.social li:last-child{
+    width: 7.4vw;
+    margin: 0;
+}
+
+#costco h1{
+    width: 10.6vw;
+}
+
+.sub {
+    margin: 0 auto 0 7.9vw;
+}
+
+.costco_items ul{
+    display: block;
+    margin: 5.7vw 0 0 3.4vw;
+    text-align: center;
+}
+
+.costco_items img:last-child{
+    width: 300px;
+}
+
+.bottom.profile.costco{
+    position: relative;
+}
+
+#mycar h1{
+    width: 10.6vw;
+}
+
+.first_items li:first-child{
+    margin-right: 1.1vw;
+}
+
+.first_items li:nth-child(2){
+    margin-right: 1.1vw;
+}
+
+.second_items li:first-child{
+    margin-right: 1.1vw;
+}
+
+.second_items li:nth-child(2){
+    margin-right: 1.1vw;
+}
+
+#frog h1{
+    width:10.6vw;
+}
+
+.frogs_col li{
+    margin-right:2.2vw;
+}
+
+.frogs_col2 li{
+    margin-right: 2.2vw;
+}
+
+.frogs_col3 li{
+    margin-right: 2.2vw;
+}
+
+#squirrel h1{
+    width: 10.6vw;
+}
+
+.squirrel_items{
+    display: block;
+}
+
+.squirrel_items li{
+    margin: 0 auto;
+}
+
+.squirrel_items li:first-child{
+    margin-bottom: 2.2vw;
+}
+
+.squirrel_items li:nth-child(2){
+    margin-bottom: 2.2vw;
+}
+
+#photography h1{
+    width: 10.6vw;
+}
+.various_items{
+    display: block;
+    margin: 0;
+}
+
+.various_items img{
+    width: 50%;
+}
+
+.various_items ul{
+    text-align: center;
+}
+
+.various_items ul:last-child li{
+    margin-top: 0;
+    margin-left:0;
+}
+}
+
+@media all and (max-width:376px){
+    #home h1{
+        width: 8.4vw;
+    }
+
+    .pageHeader h2{
+        font-size: 4.8vw;
+    }
+
+    .bgImg .simpson{
+        width: 45vw;
+    }
+
+    .skills {
+        width:70%;
+    }
+
+    #profile h1{
+        width: 8.4vw;
+    }
+    
+    .gnb ul a{
+        font-size: 4vw;
+    }
+
+    .profile_content{
+        display: block;
+        margin: 0;
+        text-align: left;
+    }
+
+    .content_detail ul:nth-child(2){
+        margin-top: 7.9vw;
+    }
+
+    .suhyun_photo{
+        text-align: center;
+    }
+
+    .content_detail{
+        padding: 6vw 17vw 8.9vw;
+        font-size: 3.9vw;
+    }
+
+    .suhyun_photo img{
+        width: 39vw;
+        height: 39vw;
+    }
+
+    #portfolio h1{
+        width: 8.4vw;
+    }
+
+    .portfolio_items img{
+        width: 26vw;
+    }
+
+    .illustrator_items img:last-child{
+        height: 60%;
+    }
+
+    .ux_items ul{ 
+        display: block;
+    }
+
+    .illustrator_items ul{
+        display: block;
+    }
+
+    .photography_items ul{
+        display: block;
+    }
+
+    .portfolio_items h2{
+        text-align: center;
+        margin-left:0;
+    }
+
+    .sub h3{
+        font-size: 5.3vw;
+        margin-bottom: 4vw;
+    }
+
+    .sub h4{
+        font-size: 4vw;
+    }
+
+    #costco h1{
+        width: 8.4vw;
+    }
+
+    #mycar h1{
+        width: 8.4vw;
+    }
+
+    .car_items{
+        margin: 0 auto;
+    }
+
+    .car_items img{
+        max-width: 50%;
+    }
+
+    .first_items ul{
+        display: block;
+        text-align: center;
+    }
+
+    .first_items li{
+        margin-left: 6.6vw;
+    }
+
+    .second_items ul{
+        display: block;
+        text-align: center;
+    } 
+
+    .second_items li{
+        margin-left: 6.6vw;
+    }
+
+    #frog h1{
+        width: 8.4vw;
+    }
+
+    .frog_items{
+        display: block;
+        text-align: center;
+        margin: 0;
+    }
+
+    #squirrel h1{
+        width: 8.4vw;
+    }
+
+    .squirrel_items img{
+        width: 50%;
+    }
+
+    .squirrel_items{
+        text-align: center;
+    }
+
+    .squirrel_items li:first-child{
+        margin-left: 13.2vw;
+    }
+
+    #various h1{
+        width: 8.4vw;
+    }
+
+
+}
